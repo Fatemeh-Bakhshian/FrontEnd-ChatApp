@@ -14,7 +14,7 @@ import {
 const UserList = () => {
   const Users = UseGetAllUser();
   return (
-    <div>
+    <div >
       <Table>
         <TableCaption>A list of all members in company</TableCaption>
         <TableHeader>
@@ -27,19 +27,22 @@ const UserList = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {Users.data?.data.map((user) => (
+          {Users.data?.users.map((user) => (
             <TableRow key={user.id}>
               <TableCell className="font-medium">{user.name}</TableCell>
               <TableCell className="font-medium">{user.birthdate}</TableCell>
               <TableCell>{user.roll}</TableCell>
               <TableCell>{user.phonenumber}</TableCell>
               <TableCell className="text-right">{user.email}</TableCell>
+              {/* <TableCell className="border-2 rounded-full ">
+                <img src={user.profile}/>
+              </TableCell> */}
             </TableRow>
           ))}
         </TableBody>
         <TableFooter>
           <TableRow>
-            <TableCell colSpan={3}>Total : {Users.data?.data.length}</TableCell>
+            <TableCell colSpan={3}>Total : {Users.data?.users.length}</TableCell>
           </TableRow>
         </TableFooter>
       </Table>

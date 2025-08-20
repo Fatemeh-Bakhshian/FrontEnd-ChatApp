@@ -5,4 +5,46 @@ export interface userType {
   email: string;
   phonenumber: string;
   birthdate: string;
+  profile:string
 }
+
+export interface userJsonType {
+  status: string,
+  results: number,
+   data: {
+        users: userType[];
+    };
+}
+
+//-------------
+
+export interface reportType {
+  id:number,
+  title:string,
+  report:string,
+  writer:string,
+  writerrol:string,
+  writerprofile:string,
+  date:string,
+  comment?:commentType[],
+
+}
+
+export interface reporJsonType {
+  status: string,
+  results: number,
+   data: {
+        reports: reportType[];
+    };
+}
+
+export interface commentType{
+  id : number,
+  writer:string,
+  text:string,
+  writerrol:string,
+  writerprofile:string,
+  date:string,
+}
+
+

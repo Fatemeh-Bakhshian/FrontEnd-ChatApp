@@ -1,15 +1,25 @@
-import AboutUs from "@/components/Landing/AboutUs"
-import Category from "@/components/Landing/Options"
-import UserList from "@/components/Landing/UserList"
+import AboutUs from "@/components/Landing/AboutUs";
+import Category from "@/components/Landing/Category";
+import Employe from "@/components/Landing/Employe";
+import Managers from "@/components/Landing/Managers";
+import RecentReports from "@/components/Landing/RecentReports";
+import UserList from "@/components/Landing/UserList";
 
 const Landing = () => {
   return (
-    <div className='grid justify-items-center'> 
-        <Category/>
-        <UserList/>
-        <AboutUs/>
-    </div>
-  )
-}
+    <div className="grid justify-items-center gap-6 my-5">
+      {/* hero  */}
+      <div className="flex flex-wrap justify-center items-center gap-8 p-8 mt-10 mb-20">
+        <AboutUs />
+        <Category />
+      </div>
 
-export default Landing
+      <Managers/>
+      <Employe />
+      {/* <UserList /> */}
+      <RecentReports/>
+    </div>
+  );
+};
+
+export default Landing;
