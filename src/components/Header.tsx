@@ -34,9 +34,9 @@ const Header = () => {
         {menu.map((items) => (
           <li
             key={items.id}
-            className="pb-2 transition-all duration-700 hover:text-[#1e8eb0] bg-none hover:bg-gradient-to-r from-white via-[#1e8eb0] to-white hover:cursor-pointer"
+            className="pb-2 transition-all duration-700 hover:text-[#1e8eb0] bg-none hover:bg-gradient-to-r from-[#CDD6D8]/50 via-[#1e8eb0] to-[#CDD6D8]/50 hover:cursor-pointer"
           >
-            <Link to={items.Link} className="bg-white w-full h-full p-2">
+            <Link to={items.Link} className="bg-[#CDD6D8] w-full h-full p-2">
               {items.title}
             </Link>
           </li>

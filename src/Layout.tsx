@@ -4,7 +4,7 @@ import Footer from "./components/Footer"
 
 const Layout = () => {
   return (
-    <div className="grid justify-items-center h-full">
+    <div className="grid justify-items-center h-full bg-[#CDD6D8]">
       <Header/>
         <Outlet/>
       <Footer/>

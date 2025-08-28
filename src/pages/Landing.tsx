@@ -3,7 +3,6 @@ import Category from "@/components/Landing/Category";
 import Employe from "@/components/Landing/Employe";
 import Managers from "@/components/Landing/Managers";
 import RecentReports from "@/components/Landing/RecentReports";
-import UserList from "@/components/Landing/UserList";
 
 const Landing = () => {
   return (
@@ -16,7 +15,6 @@ const Landing = () => {
 
       <Managers/>
       <Employe />
-      {/* <UserList /> */}
       <RecentReports/>
     </div>
   );

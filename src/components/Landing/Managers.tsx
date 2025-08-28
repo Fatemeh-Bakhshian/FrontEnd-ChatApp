@@ -8,7 +8,7 @@ const Managers = () => {
       <div className="border border-[#041D24] shadow-[#041D24] shadow-md p-5 rounded-4xl w-1/3 flex justify-center items-center ">
         {managers.data?.users.map((i) => (
           <div className="grid justify-items-center">
-            <img src={i.roll === "manager" ? i.profile : ""} />
+            <img className="rounded-4xl m-1" src={i.roll === "manager" ? i.profile : ""} />
             <p className="text-lg font-semibold text-[#395963]">
               {i.roll === "manager" ? i.name : ""}
               <span className="text-[#395963] text-sm">
