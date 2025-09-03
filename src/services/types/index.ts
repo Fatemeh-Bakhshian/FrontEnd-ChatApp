@@ -27,7 +27,7 @@ export interface reportType {
   writerprofile:string,
   date:string,
   comment?:commentType[],
-
+  like?:number
 }
 
 export interface reporJsonType {
@@ -47,4 +47,12 @@ export interface commentType{
   date:string,
 }
 
+
+export interface reportByIdType {
+  status: string,
+  results: number,
+   data: {
+        report: reportType;
+    };
+}
 

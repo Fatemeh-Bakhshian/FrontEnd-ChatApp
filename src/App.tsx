@@ -5,6 +5,7 @@ import ReportPage from "./pages/ReportPage";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import ForgetPass from "./pages/auth/ForgetPass";
+import ReportDetail from "./pages/ReportDetail";
 
 function App() {
   const CommenRoutes = [
@@ -14,6 +15,7 @@ function App() {
       children: [
         { path: "/", element: <Landing /> },
         { path: "/report-page", element: <ReportPage /> },
+        { path: "/Report-detail/:id", element: <ReportDetail /> },
       ],
     },
   ];
