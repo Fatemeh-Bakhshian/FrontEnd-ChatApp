@@ -22,8 +22,8 @@ const RecentReports = () => {
       <div className="flex flex-wrap justify-center gap-6">
         {reportList.slice(0, 3).map((data) => (
           <ReportCard
-            key={data.id}
-            id={data.id}
+            key={data._id}
+            _id={data._id}
             title={data.title}
             report={data.report}
             writer={data.writer}

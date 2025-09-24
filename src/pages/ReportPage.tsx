@@ -19,8 +19,8 @@ const ReportPage = () => {
       <div className="grid grid-cols-3 justify-items-center gap-8 m-20">
         {reportList.map((data) => (
           <ReportCard
-            key={data.id}
-            id={data.id}
+            key={data._id}
+            _id={data._id}
             title={data.title}
             report={data.report}
             writer={data.writer}

@@ -25,13 +25,13 @@ export const UseGetAllReports = () => {
   });
 };
 
-export const UseGetReportById = (id: number) => {
+export const UseGetReportById = (_id: string) => {
   return useQuery({
     queryKey: ["reports"],
     queryFn: async () => {
-      const data = await instance.get<reportByIdType>(`/reports/${id}`);
-      console.log(data.data.data.report);
-      return data.data.data;
+      const data = await instance.get<reportByIdType>(`/reports/${_id}` );
+      console.log(_id);
+      return data.data;
     },
   });
 };
